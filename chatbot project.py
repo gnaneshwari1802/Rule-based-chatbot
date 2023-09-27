@@ -1,5 +1,11 @@
 from nltk.chat.util import Chat, reflections
+# What is the full form of NLTK in chat?
+# The Natural Language Toolkit, or more commonly NLTK, is a suite of libraries and programs for symbolic and statistical natural language processing (NLP) for English written in the Python programming language. It supports classification, tokenization, stemming, tagging, parsing, and semantic reasoning functionalities.
+# nltk.chat.util.Chat[source]
+# Bases: object
 
+# __init__(pairs, reflections={})[source]
+# Initialize the chatbot. Pairs is a list of patterns and responses. Each pattern is a regular expression matching the user’s statement or question, e.g. r’I like (.*)’. For each such pattern a list of possible responses is given, e.g. [‘Why do you like %1’, ‘Did you ever dislike %1’]. Material which is matched by parenthesized sections of the patterns (e.g. .*) is mapped to the numbered positions in the responses, e.g. %1.
 #Pairs is a list of patterns and responses.
 pairs = [
     [
@@ -73,7 +79,8 @@ pairs = [
 print("Hi, I'm thecleverprogrammer and I like to chat\nPlease type lowercase English language to start a conversation. Type quit to leave ")
 #Create Chat Bot
 chat = Chat(pairs, reflections)
-
+# What are the pairs in NLTK?
+# Pairs is a list of patterns and responses. Each pattern is a regular expression matching the user's statement or question, e.g. r'I like (. *)'. For each such pattern a list of possible responses is given, e.g. ['Why do you like %1', 'Did you ever dislike %1'].
 
 chat.converse()
 
